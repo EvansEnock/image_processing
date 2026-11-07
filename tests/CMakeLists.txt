@@ -1,0 +1,3 @@
+add_executable(image_processing_tests operations_tests.cpp)
+target_link_libraries(image_processing_tests PRIVATE image_processing_core)
+add_test(NAME image_processing_operations COMMAND image_processing_tests)
